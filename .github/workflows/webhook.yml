@@ -10,5 +10,5 @@ jobs:
     steps:
     - name: Workflow Webhook Action
       uses: distributhor/workflow-webhook@v3.0.2
-      with:
+      env:
         webhook_url: https://webhook.requestcatcher.com/
