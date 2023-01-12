@@ -1,0 +1,14 @@
+name: Workflow
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  send-webhook:
+    runs-on: windows_lates
+    steps:
+    - name: Workflow Webhook Action
+      uses: distributhor/workflow-webhook@v3.0.2
+      with:
+        webhook_url: https://webhook.requestcatcher.com/
