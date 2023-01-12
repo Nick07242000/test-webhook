@@ -6,7 +6,7 @@ on:
 
 jobs:
   send-webhook:
-    runs-on: windows_lates
+    runs-on: windows_latest
     steps:
     - name: Workflow Webhook Action
       uses: distributhor/workflow-webhook@v3.0.2
